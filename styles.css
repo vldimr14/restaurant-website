@@ -181,6 +181,40 @@ p {
     font-size: 1.6rem;
 }
 
+.location {
+    margin-top: 5em;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.map address {
+    margin-top: 1em;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.open-hours ul {
+    list-style: none;
+}
+
+.open-hours ul li {
+    font-size: 1.3rem;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--footer-background-color);
