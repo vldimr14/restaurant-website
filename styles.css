@@ -85,6 +85,10 @@ span {
     text-shadow: 0px 2px 5px rgb(203, 0, 0);
 }
 
+.links.mobile {
+    display: none;
+}
+
 .links {
     width: 30em;
     list-style: none;
