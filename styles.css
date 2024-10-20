@@ -22,6 +22,7 @@ body {
 }
 
 .container {
+    width: 100vw;
     background-color: var(--primary-background-color);
     color: var(--light-text-color);
 }
@@ -38,6 +39,10 @@ body {
     position: relative;
     width: 100vw;
     height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transform-style: preserve-3d;
     z-index: -1;
 }
@@ -57,12 +62,17 @@ header {
 
 .background-img {
     height: 100%;
+    width: 100%;
     background-image: url(./resources/steak-background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -100px;
     z-index: -1;
     transform: translateZ(-10px) scale(2.5);
+}
+
+.menu-btn {
+    display: none;
 }
 
 .logo h1 {
@@ -95,8 +105,7 @@ span {
 
 .welcome-text {
     position: absolute;
-    top: 65%;
-    left: 15%;
+    top: 50%;
     color: var(--light-text-color);
     text-shadow: 0px 3px 5px rgba(0, 0, 0, 1);
     font-size: 7rem;
@@ -104,9 +113,7 @@ span {
 
 .reserve-btn {
     position: absolute;
-    top: 100%;
-    left: 42%;
-    margin: 0 auto;
+    top: 75%;
     border: 1px solid var(--light-text-color);
     color: var(--light-text-color);
     padding: 15px 20px;
@@ -254,4 +261,54 @@ footer {
 .author a:hover {
     color: #fff;
     font-weight: 300;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE VERSION */
+@media (max-width: 767px) {
+    /* HEADER */
+    .menu-btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: none;
+        transition: all 0.2s ease;
+    }
+
+    .menu-btn:hover {
+        filter: brightness(60%);
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .background-img {
+        background-position: center;
+    }
+
+    .welcome-text {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .reserve-btn {
+        top: 80%;
+        font-size: 1rem;
+    }
+
+    .contact-section {
+        display: none;
+    }
+}
+
+/* TABLET VERSION */
+@media (min-width: 768px) and (max-width: 1023px) {
+
 }
