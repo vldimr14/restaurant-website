@@ -206,7 +206,7 @@ p {
     background-color: red;
 }
 
-.map address {
+address {
     margin-top: 1em;
     font-weight: 400;
     font-style: normal;
@@ -231,6 +231,10 @@ footer {
     background-color: var(--footer-background-color);
     text-align: center;
     padding: 3em 0;
+}
+
+a.social-link {
+    text-decoration: none;
 }
 
 .social-links {
@@ -338,8 +342,131 @@ footer {
         font-size: 1rem;
     }
 
+    .section-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        margin-bottom: 10em;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 350;
+    }
+
+    .main-content img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #kitchen .description {
+        max-width: 90vw;
+    }
+
+    #kitchen img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* Contact */
     .contact-section {
-        display: none;
+        display: block;
+        margin: 6em 0;
+        text-align: center;
+    }
+
+    .contact-section p {
+        font-size: 1.8rem;
+    }
+
+    .contact-section h3 {
+        margin: 1em;
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+
+    .contact-info {
+        word-wrap: break-word;
+    }
+
+    .location {
+        margin-top: 5em;
+        height: 100vh;
+        display: block;
+    }
+
+    .map {
+        width: 100%;
+        height: 50%;
+    }
+
+    address {
+        margin-top: 1em;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.3rem;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .open-hours {
+        display: block;
+    }
+
+    .open-hours ul {
+        list-style: none;
+    }
+
+    .open-hours ul li {
+        font-size: 1.4rem;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: var(--footer-background-color);
+        text-align: center;
+        padding: 3em 0;
+    }
+
+    .social-links {
+        display: block;
+    }
+
+    .social-link img {
+        margin: 1.5em;
+        width: 4em;
+        filter: brightness(80%);
+        transition: all 0.2s ease;
+    }
+
+    .social-link img:hover {
+        filter: brightness(100%);
+    }
+
+    .author {
+        margin-top: 4em;
+        font-weight: 200;
+        font-size: 1rem;
+    }
+
+    .author a {
+        text-decoration: none;
+        color: var(--light-text-color);
+        transition: all 0.2s ease;
+    }
+
+    .author a:hover {
+        color: #fff;
+        font-weight: 300;
     }
 }
 

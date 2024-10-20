@@ -5,5 +5,4 @@ menuBtn.addEventListener('click', menuToggle);
 
 function menuToggle() {
     navbar.classList.toggle('display');
-    console.log('did it.');
 }
