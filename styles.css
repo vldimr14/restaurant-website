@@ -289,6 +289,37 @@ footer {
         display: none;
     }
 
+    .links.mobile {
+        position: absolute;
+        display: none;
+        width: 100vw;
+        margin: 0 auto;
+        z-index: 1;
+        background: #131112f3;
+        animation-name: open-menu;
+        animation-duration: 0.2s;
+    }
+
+    .mobile.display {
+        display: block;
+    }
+
+    .links.mobile .link {
+        margin: 5em;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    @keyframes open-menu {
+        from {
+            display: none;
+            background: none;
+        } to {
+            display: block;
+            background: #131112f3;
+        }
+    }
+
     .background-img {
         background-position: center;
     }
